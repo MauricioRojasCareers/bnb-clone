@@ -19,7 +19,6 @@ export const Navbar = () => {
           gap-3
           md:gap-0  
             "
-            bg-rose-300
           >
             <Logo />
             <Search />
