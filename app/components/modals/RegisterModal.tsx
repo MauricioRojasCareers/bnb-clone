@@ -21,7 +21,6 @@ const RegisterModal = () => {
   const registerModal = useRegisterModal();
   const loginModal = useLoginModal();
 
-  // const loginModal = useLoginModal();
   const [isLoading, setIsLoading] = useState(false);
 
   const {
