@@ -1,6 +1,7 @@
 "use client";
 
 import axios from "axios";
+import { Range } from "react-date-range";
 
 import { Reservation } from "@prisma/client";
 import { SafeListing, SafeUser } from "@/app/types";
@@ -54,7 +55,7 @@ const ListingClient: React.FC<ListingClientProps> = ({
 
   const [isLoading, setIsLoading] = useState(false);
   const [totalPrice, setTotalPrice] = useState(listing.price);
-  const [dateRange, setDateRange] = useState(initialDateRane);
+  const [dateRange, setDateRange] = useState<Range>(initialDateRane);
 
   const onCreateReservation = useCallback(() => {
     if (!currentUser) {
